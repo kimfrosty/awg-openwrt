@@ -12,21 +12,21 @@ jobs:
     strategy:
       matrix:
         build_env:
-          - tag: "22.03.4"
-            pkgarch: mips_24kc
-            target: ath79
-            subtarget: nand
-            vermagic: "5c9be91b90bda5403fe3a7c4e8ddb26f"
-          - tag: "23.05.0"
+          - tag: "24.10.6"
             pkgarch: mipsel_24kc
             target: ramips
             subtarget: mt7621
-            vermagic: "9c242f353867f49a96054ff8c9f2c460"
-          - tag: "23.05.2"
+            vermagic: "f31f6f85a36836e510d64a18a9a5f1bf-r1"
+          - tag: "24.10.6"
             pkgarch: mipsel_24kc
             target: ramips
             subtarget: mt7621
-            vermagic: "9c242f353867f49a96054ff8c9f2c460"
+            vermagic: "f31f6f85a36836e510d64a18a9a5f1bf-r1"
+          - tag: "24.10.6"
+            pkgarch: mipsel_24kc
+            target: ramips
+            subtarget: mt7621
+            vermagic: "f31f6f85a36836e510d64a18a9a5f1bf-r1"
 
     steps:
       - uses: actions/checkout@v4
